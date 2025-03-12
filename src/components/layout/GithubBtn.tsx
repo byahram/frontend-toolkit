@@ -14,7 +14,7 @@ const GithubBtn = () => {
 
   return (
     <Button variant="ghost" size="icon" onClick={handleClick}>
-      <ImGithub size={24} className="cursor-pointer" />
+      <ImGithub className="cursor-pointer w-5 h-5 md:w-6 md:h-6" />
     </Button>
   );
 };

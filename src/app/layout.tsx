@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/utils/providers";
+import { ThemeProviders } from "@/utils/ThemeProviders";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -35,13 +35,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-7xl m-auto",
+          "min-h-screen max-w-7xl bg-background text-foreground font-sans text-base leading-relaxed mx-auto p-0 antialiased",
           fontSans.variable
         )}
       >
-        <Providers>
-          <main>{children}</main>
-        </Providers>
+        <ThemeProviders>{children}</ThemeProviders>
       </body>
     </html>
   );

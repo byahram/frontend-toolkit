@@ -22,9 +22,9 @@ export const DarkModeToggle = () => {
   return (
     <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
       {resolvedTheme === "dark" ? (
-        <Moon className="cursor-pointer" />
+        <Moon className="cursor-pointer w-5 h-5 md:w-6 md:h-6" />
       ) : (
-        <Sun className="cursor-pointer" />
+        <Sun className="cursor-pointer w-5 h-5 md:w-6 md:h-6" />
       )}
     </Button>
   );
