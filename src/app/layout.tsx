@@ -1,10 +1,10 @@
 import { config } from "@/utils/config";
 // import { signOgImageUrl } from "@/lib/og-image";
-import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProviders } from "@/utils/ThemeProviders";
+import { cn } from "@/utils/cn";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
